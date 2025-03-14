@@ -1,0 +1,48 @@
+{
+  "name": "@cristianbm/ianetic-chat",
+  "version": "1.0.0",
+  "description": "Un widget de chat ligero y fácilmente integrable en cualquier sitio web",
+  "type": "module",
+  "main": "dist/ianetic-chat.js",
+  "module": "dist/ianetic-chat.esm.js",
+  "unpkg": "dist/ianetic-chat.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
+    "test": "jest",
+    "serve": "python3 -m http.server 8000",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianbm-hub/ianetic-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "widget",
+    "javascript",
+    "chat-widget",
+    "customer-support",
+    "live-chat",
+    "messaging"
+  ],
+  "author": "Cristian Bañuls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristianbm-hub/ianetic-chat/issues"
+  },
+  "homepage": "https://github.com/cristianbm-hub/ianetic-chat#readme",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.12.0"
+  }
+} 
